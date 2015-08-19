@@ -45,6 +45,8 @@ Plugin 'justinmk/vim-ipmotion'
 
 Plugin 'briancollins/vim-jst'
 
+Plugin 'kien/ctrlp.vim'
+
 " YouCompleteMe
 " this thing is useless and buggy
 "Plugin 'Valloric/YouCompleteMe'
@@ -87,7 +89,7 @@ let g:ycm_register_as_syntastic_checker=0
 syn on
 set t_Co=256 "256 colors
 colo wombat256
-set ts=4 sw=4 sts=4 et
+set ts=2 sw=2 sts=2 et
 set nowrap
 set tw=0
 autocmd filetype objcpp set filetype=objc
@@ -244,6 +246,7 @@ let g:EnhCommentifyMultiPartBlocks = 'yes'
 " let g:syntastic_json_jshint_exec='/usr/local/bin/jshint'
 let g:syntastic_coffee_checkers = ['coffeelint', 'coffee']
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_ruby_checkers = ['rubocop', 'mri']
 " let g:syntastic_json_checkers = ['jshint']
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
