@@ -232,7 +232,7 @@ autocmd filetype eruby,jst imap <C-u> <%%><ESC>hi
 autocmd filetype html,javascript,eruby,jst imap <C-s> <script type="text/javascript"></script><ESC>8hi
 
 "ctrp ignores
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/Pods/*,*/build/*,*/*.framework/*,
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/Pods/*,*/build/*,*/*.framework/*,*/node_modules/*,scripts/bundles/*
 
 "automatic syntax checking via syntastic
 "set statusline+=%#warningmsg#
